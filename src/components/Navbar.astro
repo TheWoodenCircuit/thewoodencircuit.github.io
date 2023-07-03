@@ -3,26 +3,45 @@ import '../styles/global.css';
 export interface Props {};
 ---
 
-<div class="text-box">
-<ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">About Us</a></li>
-    <li><a href="/info">Information</a></li>
-    <li><a href="/contact">Contact</a></li>
-</ul>
-</div> 
+<header>
+<nav>
+    <ul>
+        <li class="left-align"><a href="/"><b>The Wooden Circuit</b></a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/info">Information</a></li>
+    </ul>
+</nav>
+</header>
 <style>
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
-        text-align: center;
+        overflow: hidden;
+        background-color: rgba(243, 243, 243, 100%);
+        border: 0.05rem solid rgb(212, 212, 212);
+        border-radius: 0.2rem;
     }
+   
     li {
-        display: inline;
+        float: right;
     }
-    a, a:visited, a:hover, a:active {
-        margin: 0.5rem;
+
+    li.left-align {
+        float: left;
+    }
+    li a {
+        display: block;
         color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
     }
+
+    li a:hover {
+        background-color: rgba(243, 243, 243, 75%);
+    }
+
+
 </style>

@@ -1,18 +1,18 @@
 ---
 import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="The Wooden Circuit">
+    <Navbar></Navbar>
 	<main>
-		<h1>Information</h1>
-		<Navbar></Navbar>	
+		<h1 class="page-title">Information</h1>
         <p class="text-box">
             <b>I'm too lazy to make this page</b><br>
             Check back later! I might have finished by then...
         </p>
+        <Footer></Footer>
 	</main>
 </Layout>
-<script src="https://kit.fontawesome.com/a0c04c3719.js" crossorigin="anonymous"></script>

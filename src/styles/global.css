@@ -7,19 +7,25 @@ html {
     background-color: #F6F6F6;
 }
 code {
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-        Bitstream Vera Sans Mono, Courier New, monospace;
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
-
 main {
     margin: auto;
     padding: 1.5rem;
-    max-width: 60ch;
 }
-h1 {
+p {
+    margin: 2rem;
+    margin-left: 0; 
+}
+h1.page-title {
     font-size: 3rem;
     font-weight: 800;
     margin: 0;
+}
+@media screen and (max-width: 600px) {
+    h1.page-title {
+        font-size: 2rem;
+    }
 }
 .text-gradient {
     background-image: var(--accent-gradient);

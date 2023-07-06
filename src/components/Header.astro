@@ -1,0 +1,14 @@
+---
+import '../styles/global.css';
+export interface Props {
+    header: string,
+    subheader: string
+};
+let { header, subheader } = Astro.props
+---
+
+
+<header>
+    <h1>{header}</h1>
+    <h3>{subheader}</h3>
+</header>

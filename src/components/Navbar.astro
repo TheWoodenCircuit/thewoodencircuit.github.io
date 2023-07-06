@@ -3,34 +3,30 @@ import '../styles/global.css';
 export interface Props {};
 ---
 
-<header>
+
 <nav>
     <ul>
-        <li class="left-align"><a href="/"><b>The Wooden Circuit</b></a></li>
         <li><a href="/about">About Us</a></li>
         <li><a href="/contact">Contact</a></li>
         <li><a href="/info">Information</a></li>
+        <li><a href="/">Home</a></li>
     </ul>
 </nav>
-</header>
+
 <style>
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: rgba(243, 243, 243, 100%);
-        border: 0.05rem solid rgb(212, 212, 212);
-        border-radius: 0.2rem;
+        
     }
    
     li {
         float: right;
     }
 
-    li.left-align {
-        float: left;
-    }
+
     li a {
         display: block;
         color: black;

@@ -2,18 +2,15 @@
 import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import Navbar from '../components/Navbar.astro';
-import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="The Wooden Circuit">
-	<Navbar></Navbar>
+	<!-- Can't use Header component due to gradient -->
+	<header>
+		<h1>Welcome to<br><span class="text-gradient">The Wooden Circuit</span></h1>
+	</header>
 	<main>
-		<h1 class="page-title">Welcome to <br><span class="text-gradient">The Wooden Circuit</span></h1>
-
-		<p>
-			The Wooden Circuit is...<b>[TODO]</b>
-		</p>
+		<p><b>The Wooden Circuit</b> is a non-profit organization that does something.</p>
 		<h2>Explore</h2>
 		<ul role="list" class="link-card-grid">
 			<Card
@@ -41,5 +38,4 @@ import Footer from '../components/Footer.astro';
 			More info...
 		</p>
 	</main>
-	<Footer></Footer>
 </Layout>
